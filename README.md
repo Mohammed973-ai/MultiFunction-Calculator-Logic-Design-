@@ -7,9 +7,9 @@ This project is a hardware-level simulation of a **4-bit Multifunction Calculato
 The calculator is a basic system that can add, subtract, multiply, divide, and store numbers using logic gates and integrated circuits.
 
 ## **Core Features**
-* **Arithmetic Operations**: Performs addition, subtraction, multiplication, and division[cite: 11].
-* **Memory Management**: Includes a dedicated unit to store, recall, and clear numerical data[cite: 11, 20].
-* **Visual Output**: Converts binary operational results into a human-readable format via 7-segment displays[cite: 21, 133].
+* **Arithmetic Operations**: Performs addition, subtraction, multiplication, and division.
+* **Memory Management**: Includes a dedicated unit to store, recall, and clear numerical data.
+* **Visual Output**: Converts binary operational results into a human-readable format via 7-segment displays.
 
 ## **Technical Limitations**
 * **Input Size**: Supports 4-bit binary inputs only.
@@ -59,19 +59,19 @@ The calculator is a basic system that can add, subtract, multiply, divide, and s
 
 ## **6. Memory Unit**
 This unit manages numerical persistence through four signals:
-* **M+ (Memory Add)**: Adds the current input to the existing value in memory[cite: 93].
-* **M- (Memory Subtract)**: Subtracts the input from the stored value using a 4-bit carry ripple adder[cite: 94, 120].
-* **MR (Memory Recall)**: Outputs the stored value to a **tri-state buffer** when activated[cite: 96, 107].
-* **MC (Memory Clear)**: Resets memory to zero by adding $0 + 0$ and storing the result[cite: 97, 103].
-* **Clock Logic**: Registers are **active-low**; since buttons send a `0` when pressed, an AND gate is used to trigger storage whenever any operation button is activated[cite: 130].
+* **M+ (Memory Add)**: Adds the current input to the existing value in memory.
+* **M- (Memory Subtract)**: Subtracts the input from the stored value using a 4-bit carry ripple adder.
+* **MR (Memory Recall)**: Outputs the stored value to a **tri-state buffer** when activated.
+* **MC (Memory Clear)**: Resets memory to zero by adding $0 + 0$ and storing the result.
+* **Clock Logic**: Registers are **active-low**; since buttons send a `0` when pressed, an AND gate is used to trigger storage whenever any operation button is activated.
 
 <img width="988" height="411" alt="image" src="https://github.com/user-attachments/assets/68054610-a5d1-4762-b8ae-1730293e5bf1" />
 
 ---
 
 ## **7. Output Unit**
-* **Conversion**: Operational results are converted to Binary Coded Decimal (BCD) using the **Double Dabble Algorithm**[cite: 133].
-* **Display**: A **BCD-to-7-segment decoder** drives the final output for visual representation[cite: 133].
+* **Conversion**: Operational results are converted to Binary Coded Decimal (BCD) using the **Double Dabble Algorithm**.
+* **Display**: A **BCD-to-7-segment decoder** drives the final output for visual representation.
 
 <img width="543" height="464" alt="image" src="https://github.com/user-attachments/assets/b1a31462-283f-4956-a0f5-4b3d16248384" />
 
