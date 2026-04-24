@@ -6,6 +6,8 @@ This project is a hardware-level simulation of a **4-bit Multifunction Calculato
 ## 📖 Project Overview
 The calculator is a basic system that can add, subtract, multiply, divide, and store numbers using logic gates and integrated circuits.
 
+## video here : https://www.youtube.com/watch?v=Beiy8YmMKhU&list=PL2BtkcvSaaiup1UKjbELqaamLo3i075sN&index=9
+
 ## **Core Features**
 * **Arithmetic Operations**: Performs addition, subtraction, multiplication, and division.
 * **Memory Management**: Includes a dedicated unit to store, recall, and clear numerical data.
